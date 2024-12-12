@@ -52,7 +52,7 @@ class TestApi(unittest.TestCase):
             response.status, http.client.OK, f"Error en la petición API a {url}"
         )
         self.assertEqual(
-            response.read().decode(), "4", "ERROR divide"
+            response.read().decode(), "4.0", "ERROR divide"
         )
     
     def test_api_sqrt(self):
